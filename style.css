@@ -1,0 +1,28 @@
+body {
+  background: #fafafa !important;
+}
+
+.form-group.d-flex {
+  justify-content: center;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+input[type="checkbox"]:checked + span {
+  text-decoration: line-through;
+}
+
+.todosData {
+  justify-content: space-around;
+}
+
+#todoList {
+  list-style-type: none;
+}
+
+#todos > div {
+  background: white;
+  border: 1px solid black;
+}
