@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center">Todos</h1>
+      <div class="todosData d-flex my-2">
+        <div>Todos: <span id="todosCount">0</span></div>
+        <div>Completed: <span id="todosCompleted">0</span></div>
+      </div>
+      <div class="form-group row d-flex">
+        <input class="form-control col-sm-6 mr-4" type="text" id="todoInput" />
+        <button class="btn btn-success" onClick="getTodo()">Add Todo</button>
+      </div>
+      <div class="row" id="todos">
+        <div class="col mr-2 p-4">
+          <h2>Still To Do</h2>
+          <ul id="todoList"></ul>
+        </div>
+        <div class="col ml-2 p-4">
+          <h2>Completed To Dos</h2>
+          <div id="completedList"></div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js" charset="utf-8"></script>
+  </body>
+</html>
