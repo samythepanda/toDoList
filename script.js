@@ -64,7 +64,7 @@ function complete(todo) {
   // we're just left with the index of the todo item.
   let index = todo.replace("todo", ""); 
   completed.push(todos[index]);
-  todos.splice([index],1,) 
+  todos.splice([index],1,) ;
 
   /*
     Using the index variable, add that todo to the completed todos array.
@@ -104,5 +104,5 @@ function showCompleted() {
       </div>`;
 ]
  completedList.innerHTML = HTML;
-  completedElement.innerHTML = "";
+  completedElement.innerHTML =completed.length;
 }
