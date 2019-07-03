@@ -7,7 +7,7 @@ var completedElement = document.getElementById("todosCompleted");
 
 function getTodo() {
   // Get the input
-  var newTodo = [] document.getElementById("todoInput");
+  var newTodo = document.getElementById("todoInput");
   todos.push(newTodo.value);
 
   /*
